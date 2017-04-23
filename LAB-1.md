@@ -79,11 +79,11 @@ Download and unzip the demo app.
 Invoke-WebRequest -Uri https://broyal.blob.core.windows.net/1eae3d83-fc8b-4eba-8702-4bb20fcd6105/demoapp.zip -OutFile demoapp.zip
 -OutputPath <source_code_path>
 
-Extract-Archive demoapp.zip
+Expand-Archive -Path demoapp.zip
 ```
 
 Inside the demoapp directory you will find the Dockerfile for this project.
-You might want to inspect the Dockerfile to find out what happens during the image build.
+You might want to inspect the Dockerfile to find out what happens during the image build. The extracted files contain a pre-compiled application, so there's no need to build them at this stage.
 
 To build the image:
 
