@@ -63,6 +63,10 @@ docker commit <containerid> helloworld
 
 When completed, you now have a custom image that contains the hello world script. This can be seen with the following command.
 
+```
+docker images
+```
+
 Finally, to run the container, use the docker run command.
 
 ```
