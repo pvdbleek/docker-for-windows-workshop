@@ -97,7 +97,7 @@ docker build -t <docker_trusted_registry_url>/<user_or_organization>/<app_name>:
 Now let's run our newly created container and expose it to port 80 (HTTP).
 
 ```
-docker run -ti -p 80 <docker_trusted_registry_url>/<user_or_organization>/<app_name>:<app_version>
+docker run -ti -p 80:80 <docker_trusted_registry_url>/<user_or_organization>/<app_name>:<app_version>
 ```
 
 Open your webbrowser and point it to the hostname of your VM, you should see the website of your demo application.
